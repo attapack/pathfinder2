@@ -1,6 +1,6 @@
 #include "pathfinder.h"
 
-void mx_path_build(t_finder *path) {
+void mx_build_paths(t_finder *path) {
     t_out *step = (t_out*) malloc (sizeof(t_out));
     step->route = (int *) malloc(sizeof(int) * (path->num + 1));
 
