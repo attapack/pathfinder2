@@ -17,14 +17,12 @@ typedef struct s_out {
     int *route;
 }              t_out;
 
-//Tools pack
 t_finder *parse_input(char *file);
 void mx_build_paths(t_finder *path);
 void shortest_route(t_finder *path, t_out *step);
 void mx_print_path(t_finder *path, t_out *step);
 void mx_clean(t_finder **path);
 
-//Error pack
 void valid_argc(int argc);
 void invalid_num();
 void valid_file(char *file);
