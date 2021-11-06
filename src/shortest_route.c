@@ -1,3 +1,5 @@
+#include "pathfinder.h"
+
 void shortest_route(t_finder *path, t_out *step) {
     int i = step->route[step->length];
     int j = step->route[0];
